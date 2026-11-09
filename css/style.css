@@ -161,18 +161,49 @@ footer {
   margin: 30px 0;
 }
 
+/* スマートフォン対応 */
 @media (max-width: 600px) {
-  .profile-item {
-    align-items: flex-start;
+  .site-header {
+    position: sticky;
+    top: 0;
+    padding: 12px 10px;
+    min-height: auto;
+    display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 12px;
   }
 
-  .profile-item strong {
-    text-align: left;
+  .logo {
+    font-size: 20px;
+  }
+
+  .main-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+
+  .main-nav a {
+    flex: 1;
+    text-align: center;
+    font-size: 12px;
+    padding: 8px 2px;
+    white-space: nowrap;
   }
 }
 
+/* さらに小さいスマホ */
+@media (max-width: 360px) {
+  .main-nav a {
+    font-size: 11px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+}
 .reviews {
   max-width: 900px;
   margin: 0 auto;
