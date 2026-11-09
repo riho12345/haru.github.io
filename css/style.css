@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: #333;
+  line-height: 1.8;
+}
+
+header {
+  background: #243b55;
+  color: white;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.hero {
+  background: #edf2f7;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+section:not(.hero) {
+  padding: 50px 8%;
+}
+
+footer {
+  background: #243b55;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
