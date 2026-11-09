@@ -161,16 +161,17 @@ footer {
   margin: 30px 0;
 }
 
-/* スマートフォン対応 */
 @media (max-width: 600px) {
   .site-header {
     position: sticky;
     top: 0;
-    padding: 12px 10px;
-    min-height: auto;
+    padding: 22px 10px 26px;
+    min-height: 115px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    justify-content: center;
+    gap: 18px;
+    background: #101010;
   }
 
   .logo {
@@ -181,7 +182,6 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 0;
   }
 
@@ -194,16 +194,6 @@ footer {
   }
 }
 
-/* さらに小さいスマホ */
-@media (max-width: 360px) {
-  .main-nav a {
-    font-size: 11px;
-  }
-
-  .logo {
-    font-size: 18px;
-  }
-}
 .reviews {
   max-width: 900px;
   margin: 0 auto;
