@@ -284,10 +284,18 @@ footer {
   }
 
   .main-nav {
-    gap: 20px;
-  }
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 18px;
+}
 
-  .main-nav a {
-    font-size: 12px;
-  }
+.main-nav a {
+  flex: none;
+  text-align: center;
+  font-size: 11px;
+  white-space: nowrap;
+  padding: 8px 0;
+}
 }
